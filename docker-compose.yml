@@ -1,0 +1,9 @@
+version: '3.6'
+services:
+    nginx-multi-spa:
+        build: .
+        image: nginx-multi-spa
+        command: nginx -g 'daemon off;'
+        volumes:
+            - ./html:/usr/share/nginx/html
+
